@@ -12,13 +12,13 @@
 </head>
 <body>
     <header>
-        <nav class="container">
-            <ul>
+        <nav class="container row space-between vertical-center">
+            <ul class="bold-text">
                 <li><a href="#">Donna</a></li>
                 <li><a href="#">Uomo</a></li>
                 <li><a href="#">Bambini</a></li>
             </ul>
-            <img src="img/boolean-logo.png" alt="Logo Boolean">
+            <img class="nav-logo" src="img/boolean-logo.png" alt="Logo Boolean">
             <ul>
                 <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
                 <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
@@ -31,29 +31,122 @@
         <section>
             <div class="container">
                 <div class="row">
-                    <div class="col"></div>
-                    <div class="col"></div>
-                    <div class="col"></div>
-                    <div class="col"></div>
-                    <div class="col"></div>
-                    <div class="col"></div>
+                    <div class="col">
+                        <div class="product">
+                            <img class="product-img" src="img/1.webp" alt="">
+                            <img class="product-hover-img" src="img/1b.webp" alt="">
+                            <span class="product-favorite"><i class="fa-solid fa-heart"></i></span>
+                            <div class="product-tags">
+                                <span class="product-tags-discount small-text">-50%</span>
+                                <span class="product-tags-sustainable small-text">Sostenibilità</span>
+                            </div>
+                        </div>
+                        <div class="product-description">
+                            <span class="small-text">Levi's</span>
+                            <h3 class="product-description-title">Relaxed Fit Tee Unisex</h3>
+                            <span class="product-description-price small-text bold-text">14,99 €</span>
+                            <span class="product-description-original-price small-text">29,99 €</span>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="product">
+                            <img class="product-img" src="img/2.webp" alt="">
+                            <img class="product-hover-img" src="img/2b.webp" alt="">
+                            <span class="product-favorite"><i class="fa-solid fa-heart"></i></span>
+                            <div class="product-tags">
+                                <span class="product-tags-discount small-text">-30%</span>
+                            </div>
+                        </div>
+                        <div class="product-description">
+                            <span class="small-text">Guess</span>
+                            <h3 class="product-description-title">Roses Tee</h3>
+                            <span class="product-description-price small-text bold-text">20,99 €</span>
+                            <span class="product-description-original-price small-text">29,99 €</span>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="product">
+                            <img class="product-img" src="img/3.webp" alt="">
+                            <img class="product-hover-img" src="img/3b.webp" alt="">
+                            <span class="product-favorite"><i class="fa-solid fa-heart"></i></span>
+                            <div class="product-tags">
+                                <span class="product-tags-discount small-text">-30%</span>
+                            </div>
+                        </div>
+                        <div class="product-description">
+                            <span class="small-text">Come Zucchero Filato</span>
+                            <h3 class="product-description-title">Voglia di colori pastello</h3>
+                            <span class="product-description-price small-text bold-text">129,99 €</span>
+                            <span class="product-description-original-price small-text">184,99 €</span>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="product">
+                            <img class="product-img" src="img/4.webp" alt="">
+                            <img class="product-hover-img" src="img/4b.webp" alt="">
+                            <span class="product-favorite"><i class="fa-solid fa-heart"></i></span>
+                            <div class="product-tags">
+                                <span class="product-tags-discount small-text">-50%</span>
+                                <span class="product-tags-sustainable small-text">Sostenibilità</span>
+                            </div>
+                        </div>
+                        <div class="product-description">
+                            <span class="small-text">Levi's</span>
+                            <h3 class="product-description-title">Tee Unisex</h3>
+                            <span class="product-description-price small-text bold-text">14,99 €</span>
+                            <span class="product-description-original-price small-text">29,99 €</span>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="product">
+                            <img class="product-img" src="img/5.webp" alt="">
+                            <img class="product-hover-img" src="img/5b.webp" alt="">
+                            <span class="product-favorite"><i class="fa-solid fa-heart"></i></span>
+                        </div>
+                        <div class="product-description">
+                            <span class="small-text">Maya Deluxe</span>
+                            <h3 class="product-description-title">Stripe bodice</h3>
+                            <span class="product-description-price small-text bold-text">99,99 €</span>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="product">
+                            <img class="product-img" src="img/6.webp" alt="">
+                            <img class="product-hover-img" src="img/6b.webp" alt="">
+                            <span class="product-favorite"><i class="fa-solid fa-heart"></i></span>
+                            <div class="product-tags">
+                                <span class="product-tags-sustainable small-text">Sostenibilità</span>
+                            </div>
+                        </div>
+                        <div class="product-description">
+                            <span class="small-text">Esprit/span>
+                            <h3 class="product-description-title">Maglione - Black</h3>
+                            <span class="product-description-price small-text bold-text">29,99 €</span>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="container">
-            <div>
-                <h5>Boolando s.r.l</h5>
+        <div class="container row space-between vertical-center">
+            <div class="boolando-info">
+                <h4 class="boolando-info-title">Boolando s.r.l</h4>
                 <ul>
                     <li><a href="#">Informazioni legali</a></li>
                     <li><a href="#">Informativa sulla privacy</a></li>
                     <li><a href="#">Diritto di recesso</a></li>
                 </ul>
             </div>
-            <div>
-                <span>Trovaci anche su</span>
+            <div class="social-media">
+                <span class="social-media-text bold-text small-text">Trovaci anche su</span>
                 <ul>
                     <li><a href="#"><i class="fa-brands fa-twitter-square"></i></a></li>
                     <li><a href="#"><i class="fa-brands fa-facebook-square"></i></a></li>

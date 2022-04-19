@@ -4,8 +4,41 @@
     padding: 0;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    padding-right: 0.5rem;
+}
+
+header {
+    background-color: #FF6900;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.small-text {
+    font-size: 0.8rem;
+}
+
 .container {
-    max-width: 900px;
+    max-width: 960px;
     margin: 0 auto;
 }
 
@@ -15,8 +48,98 @@
     gap: 1rem;
 }
 
+.space-between {
+    justify-content: space-between;
+}
+
+.vertical-center {
+    align-items: center;
+}
+
+nav .nav-logo {
+    padding: 1rem 0;
+    height: 60px;
+}
+
+main .container {
+    padding: calc(60px + 4rem) 0 2rem 0;
+    color: black;
+}
+
 .col {
     flex-basis: calc((100% - 2rem) / 3);
-    background-color: aqua;
-    height: 400px;
+    padding-bottom: 2rem;
+}
+
+.product {
+    position: relative;
+}
+
+.product .product-img {
+    width: 100%;
+}
+
+.product .product-hover-img, .product:hover .product-img {
+    display: none;
+}
+
+.product:hover .product-hover-img {
+    display: inline-block;
+    width: 100%;
+}
+
+.product .product-favorite {
+    position: absolute;
+    top: 0.5rem;
+    right: 0;
+    background-color: white;
+    padding: 1rem;
+}
+
+.product-favorite:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.product .product-tags {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    color: white;
+    font-weight: bold;
+}
+
+.product .product-tags-discount {
+    background-color: red;
+    padding: 0.5rem;
+}
+
+.product .product-tags-sustainable {
+    background-color: green;
+    padding: 0.5rem;
+}
+
+.product-description .product-description-title {
+    text-transform: uppercase;
+}
+
+.product-description .product-description-price {
+    color: red;
+}
+
+.product-description .product-description-original-price {
+    text-decoration: line-through;
+}
+
+footer {
+    background-color: #1A1A1A;
+}
+
+.boolando-info, .social-media {
+    padding: 2rem 0;
+}
+
+.boolando-info .boolando-info-title, .social-media .social-media-text {
+    padding-bottom: 0.5rem;
+    display: block;
 }
